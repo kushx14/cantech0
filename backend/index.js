@@ -1,13 +1,13 @@
 require('dotenv').config();
 const express = require('express')
 const app = express()
-const port = 5000
+// const port = 5000
 const connectDB = require('./dbconfig');
 
 
 connectDB();
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","http://localhost:");
+    res.setHeader("Access-Control-Allow-Origin","https://cantech0.onrender.com");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin,X-Requested-With, Content-Type ,Accept"
@@ -20,6 +20,6 @@ app.use('/api',require("./Routes/Displaydata"))
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })

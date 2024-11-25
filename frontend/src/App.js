@@ -1,6 +1,6 @@
 import './App.css';
-import  Home from './screens/Home'
-import Login from './screens/Login'
+import  Home from './screens/Home.jsx'
+import Login from './screens/Login.jsx'
 import {
   BrowserRouter as Router,
   Routes,
