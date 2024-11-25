@@ -10,7 +10,7 @@ function Login() {
     console.log("Submitting credentials:", credentials);
 
     // Send credentials to the backend
-    const response = await fetch("http://localhost:5000/api/loginuser", {
+    const response = await fetch("https://cantech0.onrender.com/api/loginuser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
